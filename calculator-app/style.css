@@ -1,0 +1,101 @@
+/* General body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator container */
+.Cal {
+    width: 300px;
+    padding: 20px;
+    border:double #e74c3c;
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0px 4px 5px rgb(11, 11, 11);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+/* Input field for displaying the value */
+.value {
+    grid-column: span 4;
+    height: 60px;
+    font-size: 2em;
+    text-align: right;
+    padding-right: 10px;
+    border:double;
+    border-radius: 5px;
+    background-color: #222;
+    color: rgb(248, 247, 247);
+    box-shadow: 2px 3px 4px rgba(218, 244, 124, 0.5);
+}
+
+/* Styling buttons */
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 1.5em;
+    background-color: #444;
+    box-shadow:2px 2px 4px #d2b8b8;
+    color: white;
+    border-radius: 5px;
+    border-color: solid rgb(166, 106, 225);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Button hover effect */
+span:hover {
+    background-color: #666;
+}
+
+/* Special button styling */
+.clear {
+    background-color: #e74c3c;
+}
+.clear:hover {
+    background-color: #c5ed62;
+    color: #e74c3c;
+}
+
+.plus,.slash,.staric,.minus,.mod {
+    background-color: #3498db;
+}
+.plus:hover,.slash:hover,.staric:hover,.minus:hover,.mod:hover,.equals:hover,.point:hover {
+    background-color: #555;
+    color: rgb(241, 73, 180);
+}
+
+.equals {
+    background-color: #27ae60;
+    grid-column: span 3; /* Make the equals button take up two columns */
+}
+
+/* Number buttons */
+.num {
+    background-color: #555;
+   
+}
+.num:hover {
+    background-color: #d2b8b8;
+    color: #3498db;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .Cal {
+        width: 100%;
+    }
+}
+
+ .point{
+    background-color: chocolate;
+ }

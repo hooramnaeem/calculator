@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form name="Calculator" class="Cal">
+        <input type="text" name="tex" class="value"/>
+
+        <span class="clear" onclick="document.Calculator.tex.value=''">C</span>
+        <span class="slash" onclick="document.Calculator.tex.value += '/'">/</span>
+        <span class="mod" onclick="document.Calculator.tex.value += '%'">%</span>
+        <span class="point" onclick="document.Calculator.tex.value += '.'">.</span>
+        
+        <span class="num" onclick="document.Calculator.tex.value += '7'">7</span>
+        <span class="num" onclick="document.Calculator.tex.value += '8'">8</span>
+        <span class="num" onclick="document.Calculator.tex.value += '9'">9</span>
+        <span class="staric" onclick="document.Calculator.tex.value += '*'">*</span>
+
+        <span class="num" onclick="document.Calculator.tex.value += '4'">4</span>
+        <span class="num" onclick="document.Calculator.tex.value += '5'">5</span>
+        <span class="num" onclick="document.Calculator.tex.value += '6'">6</span>
+        <span class="minus" onclick="document.Calculator.tex.value += '-'">-</span>
+
+        <span class="num" onclick="document.Calculator.tex.value += '1'">1</span>
+        <span class="num" onclick="document.Calculator.tex.value += '2'">2</span>
+        <span class="num" onclick="document.Calculator.tex.value += '3'">3</span>
+        <span class="plus" onclick="document.Calculator.tex.value += '+'">+</span>
+
+        <span class="num" onclick="document.Calculator.tex.value += '0'">0</span>
+       
+        
+
+        <span class="equals" onclick="document.Calculator.tex.value = eval(document.Calculator.tex.value)">=</span>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
